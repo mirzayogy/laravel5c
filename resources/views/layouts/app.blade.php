@@ -10,12 +10,12 @@
         @include('layouts.components.sidebar')
         <!--begin::App Main-->
         <main class="app-main">
-            @include('layouts.components.content-header')
+            @yield('header')
             <!--begin::App Content-->
             <div class="app-content">
                 <!--begin::Container-->
                 <div class="container-fluid">
-                    @include('layouts.components.badge')
+                    @yield('content')
                 </div>
                 <!--end::Row-->
             </div>
